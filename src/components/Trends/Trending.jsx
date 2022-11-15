@@ -51,7 +51,7 @@ const Trending = () => {
   return (
     <div>
       <Box border="1px solid beige">
-        <Heading align={"left"}> TOP PICS FOR YOU</Heading>
+        <Heading align={"left"}> TOP PICKS FOR YOU</Heading>
         <Slider {...settings}>
           {mensD?.length > 0 &&
             mensD.map((item) => {

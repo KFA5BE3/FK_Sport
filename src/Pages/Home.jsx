@@ -111,7 +111,7 @@ const Home = () => {
           gap="2rem"
           display={"block"}
         >
-          <Heading>JOIN ADIDAS AND GET 15% OFF</Heading>
+          <Heading>JOIN SPORT K AND GET 15% OFF</Heading>
           <Button
             my={"4"}
             bg="black"

@@ -12,7 +12,7 @@ import {
   useColorMode,
   useMediaQuery,
 } from "@chakra-ui/react";
-import logo from "../../img/favicon.ico";
+import logo from "../../img/Faisal_Sport.png";
 //import { FiUser } from "react-icons/fi";
 import { BsSuitHeart } from "react-icons/bs";
 import { BsBag } from "react-icons/bs";
@@ -55,41 +55,16 @@ const Navbar = () => {
   };
   return (
     <div className="Navbar">
-      <Flex
-        h={"9vh"}
-        display="flex"
-        justifyContent={"right"}
-        gap="10px"
-        alignItems={"center"}
-        bg={colorMode==="dark"?'none':'#ebecec'}
-      >
-        {auth ? (
-          <Box>
-            <Profile colorMode={colorMode} />
-          </Box>
-        ) : (
-          <Button
-            bg={"black"}
-            color={"whitesmoke"}
-            border={"1px solid beige"}
-            _hover={{
-              bg: "none",
-              color: "teal",
-            }}
-            onClick={handleSignup}
-          >
-            Sign up
-          </Button>
-        )}
-       <Box mr={['5','6','7','9']}> <DarkModeBtn /></Box>
-      </Flex>
+   
       <Flex fontWeight="bold">
         <HStack onClick={handleHome} cursor={"pointer"}>
           <Image width={["25px"]} m={5} src={logo} alt="logo" />
         </HStack>
+        
         <Spacer />
         {isLargerThan ? (
           <HStack>
+          
             <NavLink
               style={({ isActive }) => (isActive ? activeStyle : baseStyle)}
               to="/"
@@ -213,6 +188,7 @@ const Navbar = () => {
               >
                 {cart ? cart.length : 0}
               </Text>
+              <Box mr={['5','6','7','9']}> <DarkModeBtn /></Box>
             </Flex>
           </Box>
           <Box> {!isLargerThan && <SideMenu />}</Box>
