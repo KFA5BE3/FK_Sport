@@ -1,4 +1,4 @@
-# view project live project https://master.d33aw8nf893j0s.amplifyapp.com/
+# view live project project https://master.d33aw8nf893j0s.amplifyapp.com/
 
 # Getting Started with Create React App
 
